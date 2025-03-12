@@ -4,7 +4,8 @@
 
 ## Subject: Experience future search with your friend, Aura Search Engine
 
-## Description: Aura Search Engine is a cutting-edge, AI-powered platform that redefines the way you explore and connect with the digital world. Featuring a friendly, conversational avatar, Aura offers an intuitive chatbot that combines convenience and innovation to enhance your daily life.
+## Description: Aura Search Engine is a cutting-edge, AI-powered platform that redefines the way you explore and connect with the digital world. Featuring a friendly, conversational avatar, Aura offers an intuitive  interactions, rapid and accurate search results, and a suite of tools for productivity and entertainment. It's not just a search engine; it's your partner for discovery, productivity, and entertainment. chatbot that combines convenience and innovation to enhance your daily life.
+
 
 It's not just a search engine; it's your partner for discovery, productivity, and entertainment.
 
