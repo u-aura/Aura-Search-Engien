@@ -4,8 +4,33 @@
 
 ## Basic Structure: 
 # Import necessary libraries
+
+
 import json
 
+# Load the JSON data
+with open('data.json', 'r') as file:
+    data = json.load(file)
+
+# Extract details from JSON
+name = data.get('Aaradhya Malviya')
+age = data.get('21')
+city = data.get('Indore')
+search_criteria = data.get('search', '')
+
+# Implement search logic
+def search_engine_core(criteria):
+    # Example search logic
+    if criteria in name:
+        return f"Found '{criteria}' in name: {name}"
+    elif criteria in city:
+        return f"Found '{criteria}' in city: {Indore}"
+    else:
+        return f"'{criteria}' not found"
+
+# Perform search
+result = search_engine_core(search_criteria)
+print(result)
 # Function to load and index data
 def load_data(file_path):
     """
@@ -28,34 +53,6 @@ def load_data(file_path):
 def search(query, indexed_data):
     """
     Searches the indexed data for the given query.
-    Returns a list of matching results.
-    """
-    query = query.lower()  # Case-insensitive search
-    results = [item for item in indexed_data if query in item.get('content', '').lower()]
-    return results
-
-# Main execution block
-if __name__ == "__main__":
-    # Specify the data file path
-    data_file_path = "data.json"  # Replace this with the path to your dataset file
-    
-    # Load and index the data
-    indexed_data = load_data(data_file_path)
-    
-    # Prompt the user for a search query
-    search_query = input(" "Aura-search - engine is an AI powered search engine that provides personalized search results, AI avatars, voice search, video search, map, weather updates, health tracking, and more using free and open-source technology.": ")
-    
-    # Perform the search
-    search_results = search(search_query, indexed_data)
-    
-    # Display the search results
-    if search_results:
-        print(f"Found {len(search_results)} result(s):")
-        for i, result in enumerate(search_results, 1):
-            print(f"{i}. {result['content']}")
-    else:
-        print("No results found for your query.")
-       Searches the indexed data for the given query.
     Returns a list of matching results.
     """
     query = query.lower()  # Case-insensitive search
