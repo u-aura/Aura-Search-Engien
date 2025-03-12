@@ -10,28 +10,23 @@ It's not just a search engine; it's your partner for discovery, productivity, an
 
 ## Key Features:
 
-- AI-powered conversational avatar for seamless interaction
-- Hands-free voice search capability
-- Explore images, videos, entertainment, and more
-- Track health and wellness routines
-- Rapid, accurate search results
+- **Conversational Avatar**: Interact with Aura naturally through its AI-powered chatbot.
+- **Voice Search**: Perform searches without lifting a finger.
+- **Comprehensive Search Results**: Images, videos, movies, and entertainment at your fingertips.
+- **Health & Wellness Tracking**: Stay on top of your routines and goals.
+- **Daily Planning**: Manage and track your day seamlessly.
+- **Map & Weather** : Tracking location and weather.
+
 
 ## Table of Contents:
 
-- Key Features
-- Installation
-- Usage
-- Contributing
-- License
-- Future Plans
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Future Plans](#future-plans)
 
-## Key Features:
-
-- Conversational Avatar: Interact with Aura naturally through its AI-powered chatbot.
-- Voice Search: Perform searches without lifting a finger.
-- Comprehensive Search Results: Images, videos, movies, and entertainment at your fingertips.
-- Health & Wellness Tracking: Stay on top of your routines and goals.
-- Daily Planning: Manage and track your day seamlessly.
 
 ## Installation:
 
@@ -82,3 +77,7 @@ Contributions are welcome! To get started:
 - Multi-language support for global users.
 - Enhanced personalization based on user preferences.
 - Integration with third-party apps for better health and productivity tracking.
+
+  ## Contact
+
+For support or questions, please contact [malviyaaradhya99@gmail.com].
