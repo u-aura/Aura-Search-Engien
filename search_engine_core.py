@@ -31,18 +31,27 @@ def search_engine_core(criteria):
 result = search_engine_core(search_criteria)
 print(result)
 # Function to load and index data
-def load_data(file_path):
+def load_data(file_path):https://github.com/u-aura/Aura-Search-Engien/blob/main/search_engine_core.py.
+
+
     """
     Loads data from a JSON file and indexes it.
     Returns the indexed data as a list of records.
     """
     try:
-        with open(file_path, 'r') as file:
+      # Load the JSON data
+def load_data(file_path):
+    try:
+        with open(file_path, 'r') as file:https://github.com/u-aura/Aura-Search-Engien/blob/main/search_engine_core.py.
+
+
             data = json.load(file)
         print("Data successfully loaded and indexed.")
         return data
     except FileNotFoundError:
-        print("Error: File not found. Please check the file path.")
+        print(https://github.com/u-aura/Aura-Search-Engien/blob/main/search_engine_core.py.
+
+")
         return []
     except json.JSONDecodeError:
         print("Error: Failed to decode JSON. Please check the file content.")
@@ -50,10 +59,20 @@ def load_data(file_path):
 
 # Function to search the indexed data
 def search(query, indexed_data):
-    """
-    Searches the indexed data for the given query.
-    Returns a list of matching results.
-    """
     query = query.lower()  # Case-insensitive search
     results = [item for item in indexed_data if query in item.get('content', '').lower()]
     return results
+
+# Main search engine core function
+def search_engine_core(criteria, data):
+    results = search(criteria, data)
+    if results:
+        return f"Found {len(results)} results for '{criteria}': {results}"
+    else:
+        return f"'{criteria}' not found"
+
+# Load data and perform search
+data = load_data('data.json')
+search_criteria = data.get('search', '')
+result = search_engine_core(search_criteria, data)
+print(result)
