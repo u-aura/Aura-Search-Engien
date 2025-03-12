@@ -13,9 +13,9 @@ with open('data.json', 'r') as file:
     data = json.load(file)
 
 # Extract details from JSON
-name = data.get('Aaradhya Malviya')
-age = data.get('21')
-city = data.get('Indore')
+name = data.get('name')
+age = data.get('age')
+city = data.get('city')
 search_criteria = data.get('search', '')
 
 # Implement search logic
@@ -24,10 +24,9 @@ def search_engine_core(criteria):
     if criteria in name:
         return f"Found '{criteria}' in name: {name}"
     elif criteria in city:
-        return f"Found '{criteria}' in city: {Indore}"
+        return f"Found '{criteria}' in city: {city}"
     else:
         return f"'{criteria}' not found"
-
 # Perform search
 result = search_engine_core(search_criteria)
 print(result)
