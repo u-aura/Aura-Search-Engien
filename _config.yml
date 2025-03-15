@@ -1,0 +1,42 @@
+# Site settings
+title: "Your Site Title"
+description: "A brief description of your site"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Author settings
+author:
+  name: "Your Name"
+  email: "your-email@example.com"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+
+# Sass settings
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - vendor
+
+# Include these files in the site
+include:
+  - _pages
+
+# Permalinks
+permalink: pretty
+
+
+cd /path/to/your/repository
+touch _config.yml
+nano _config.yml
+# (Paste the YAML configuration into the file and save it)
+git add _config.yml
+git commit -m "Add _config.yml for Jekyll configuration"
+git push origin main
