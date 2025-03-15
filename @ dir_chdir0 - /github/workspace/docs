@@ -1,0 +1,28 @@
+YAML
+name: pages-build-deployment
+
+on:
+  push:
+    branches:
+The failing job encountered an error while converting a      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+ SCSS file using Jekyll. The specific error is:
+``      uses: actions/checkout@v2
+
+    - name: Set up Node.js`
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/style.scss':
+No
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Create missing directory
+ such file or directory @ dir_chdir0 - /github/workspace      run: mkdir -p docs
+
+    - name: Build the site/docs
