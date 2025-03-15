@@ -1,0 +1,5 @@
+   ```yaml
+   steps:
+     - error and have a successful build. name: Create missing docs directory
+       run: mkdir -p /github/workspace/docs
+     - name: Build with
